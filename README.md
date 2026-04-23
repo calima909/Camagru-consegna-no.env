@@ -1,3 +1,5 @@
+*Google app password eliminata dal .env, dati sensibili.
+
 Camagru - Applicazione Web di Photo Editing
 
 Progettazione e sviluppo di una web application in PHP e JS, struttura MVC, che consente agli utenti di scattare o caricare immagini e applicare overlay grafici lato server. 
