@@ -1,0 +1,24 @@
+#preview img.overlay {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 120px;
+    cursor: grab;
+    z-index: 1;
+}
+
+#overlayBar {
+    margin-top: 10px;
+
+}
+
+.overlayThumb {
+    width: 15%;
+    margin: 15px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.overlayThumb:hover {
+    border: 2px solid blue;
+}

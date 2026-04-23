@@ -1,0 +1,32 @@
+#thumbnails img {
+    width: 80px;
+    margin: 5px;
+}
+
+.thumbnail {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+}
+
+.thumbnail img {
+    width: 150px;
+    display: block;
+}
+
+.thumbnail .deleteBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 24px;
+    text-align: center;
+    padding: 0;
+}

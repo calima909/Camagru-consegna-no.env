@@ -1,0 +1,24 @@
+.comments {
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.comments div {
+    word-wrap: break-word;
+    white-space: normal;
+    margin-bottom: 5px;
+    max-width: 300px;
+    padding-left: 10px;
+    
+}
+
+.commentForm{
+    padding: 10px;
+}
+
+@media (max-width: 480px) {
+    .comments div {
+        width: auto;
+        max-width: 300px;
+    }
+}

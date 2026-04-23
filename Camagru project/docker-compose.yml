@@ -1,0 +1,40 @@
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: camagru_web
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    env_file:
+      - .env
+    environment:
+      SMTP_HOST: ${SMTP_HOST}
+      SMTP_PORT: ${SMTP_PORT}
+      SMTP_USER: ${SMTP_USER}
+      SMTP_PASS: ${SMTP_PASS}
+      SMTP_FROM: ${SMTP_FROM}
+
+  db:
+    build:
+      context: ./docker/mySql
+    # image: mysql:8.0
+    container_name: camagru_db
+    restart: always
+    command: --host_cache_size=0
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./docker/mySql/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  db_data:

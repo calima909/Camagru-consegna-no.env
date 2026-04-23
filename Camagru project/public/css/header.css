@@ -1,0 +1,36 @@
+header {
+  height: 120px;
+  background: #D96C06;
+  padding-left: 15px;
+  color: #F5E6D3;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 4px 0 #5A3E2B;  
+}
+
+@font-face {
+  font-family: 'Ashington';
+  src: url('../fonts/Ashington.otf') format('opentype');    
+}
+
+.logo {
+  font-family: 'Ashington', sans-serif;
+  line-height: 1;
+  margin-top: 22px;
+  font-size: clamp(40px, 5vw, 80px);
+  color: #F5E6D3;
+  text-shadow: 4px 4px 0 #5A3E2B;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav {
+  max-width: 40%;
+}
+
+.navClass {
+  font-size: clamp(10px, 2vw, 24px);
+}

@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fredoka One', sans-serif;  
+}
+h1, h2, h3 {
+    padding-left: 15px;
+    color: #5A3E2B;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+button {
+    cursor: pointer;    
+}
+
+
+main {
+    flex: 1;
+    background-image: url('../img/sfondo1.jpg');    
+}
+
+.main2 {
+    flex: 1;
+    background-image: url('../img/sfondo2.jpg');
+    background-size: 2150px;
+    background-position: -10% 0%;
+}
+
+
+a {
+    color: #5A3E2B;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5A3E2B;
+}
+
+a:hover {
+    color: #5A3E2B;
+}
+
+a:active {
+    color: black;
+}

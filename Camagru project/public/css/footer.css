@@ -1,0 +1,22 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Fredoka One', sans-serif;
+    background: #D96C06;
+    color: #FFF8DC;
+    border-top: 4px solid #5A3E2B;
+    box-shadow: 0 -3px 0 #5A3E2B;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #FFF8DC;
+    margin: 0 8px;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.footer a:hover {
+    color: #E3B23C;
+    transform: scale(1.1);
+}
